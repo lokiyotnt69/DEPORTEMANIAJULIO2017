@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+
+<items>
+
+<item>
+<title>[COLOR=goldenrod]⚽~⚽~⚽ ⚽ 📺   [/COLOR][B][COLOR red]Agenda/ArenaVision - Plexus[/COLOR][/B]   [COLOR=goldenrod] 📺 ⚽ ⚽~⚽~⚽[/COLOR]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.plexus-streams/?item=url=Arenavision.in.cfg&mode=1&name=arenavision_schedule</jsonrpc>
+<thumbnail>http://arenavision.ru/sites/default/files/logo_av2015.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR goldenrod] ⚽ 📺 ⚽  [/COLOR][B][COLOR red]ArenaVision[/COLOR][/B]  [COLOR goldenrod]⚽ 📺 ⚽ [/COLOR][COLOR darkcyan][I] ~ plexus[/I][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://s29.postimg.org/txckqm8ev/sports.jpg</thumbnail>
+<fanart></fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item><title>[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR] [COLOR lightslategray][makelist.param3] [/COLOR] [COLOR skyblue][makelist.param4] [/COLOR]  +  [COLOR lightyellow][makelist.param6] [/COLOR] [COLOR lightyellow][makelist.param8] [/COLOR] [COLOR lightyellow][makelist.param10] [/COLOR] 	[COLOR lightyellow][makelist.param12] [/COLOR]</title>
+<link>plugin://program.plexus/?url=[makelist.param5][makelist.param7][makelist.param9][makelist.param11]&amp;mode=1&amp;name=Arenavision</link>
+</item>	
+]]></listrepeat>
+<expres><![CDATA[center'>(.*?)<[\w\W\s]{0,2}>(.*?)<[\w\W\s]{0,60}alt='(.*?)'[\w\W\s]{0,55}br>(.*?)<|[\w\W\s]{0,40}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png]]></expres>
+<page>https://avezy.tk/</page>
+<Agent>Mozilla</Agent>
+</regex>
+<thumbnail>https://s29.postimg.org/txckqm8ev/sports.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR red][B]AGENDA ARENAVISION[/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://arenavision.ru/sites/default/files/logo_av2015.png</thumbnail>
+<fanart>http://arenavision.ru/themes/hertz/images/bg.jpg</fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item><title>[COLOR darkcyan][makelist.param1][/COLOR] [COLOR orangered][makelist.param2] [/COLOR][COLOR white][makelist.param3][/COLOR]</title>
+<link>plugin://program.plexus/?url=[makelist.param4]&amp;mode=1&amp;name=jdr63IPTV+[makelist.param3]+Arenavision</link>
+</item>	
+]]></listrepeat>
+<expres><![CDATA[center'>(.*?)<[\w\W\s]{0,120}<td>(.*?)<br>(.*?)<[\w\W\s]{0,40}acestream://(.*?)"]]></expres>
+<page>https://avezy.tk/</page>
+<Agent>Mozilla</Agent>
+</regex><thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+</item>
+
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 1 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av1</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 2[/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av2</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 3 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av3</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 4 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av4</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 5 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av5</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 6 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av6</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 7 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av7</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 8 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av8</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 9 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av9</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 10 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av10</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 11 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av11</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 12 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av12</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 13 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av13</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 14 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av14</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 15 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av15</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 16 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av16</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 17 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av17</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 18 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av18</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 19 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av19</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 20 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av20</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 21 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av21</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 22 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av22</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 23 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av23</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 24 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av24</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 25 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av25</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 26 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av26</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 27 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av27</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 28 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av28</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 29 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av29</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 30 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av30</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]Arenavision 31 [/B][/COLOR]    ~   plexus[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://program.plexus/?url=$doregex[url]&amp;mode=1&amp;name=Jdr63IPTV</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+
+	<regex>
+	<name>url</name>    
+	<expres>this.loadPlayer."([^"]*)</expres>
+	<page>http://arenavision.ru/av31</page>
+	<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0</agent>
+	<setcookie>Cookie: __cfduid=d7c77afa3da16e8819ff5eff470a4adeb1418372022; beget=begetok; has_js=1</setcookie>
+	<referer>http://arenavision.ru/</referer>
+	</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR goldenrod][COLOR blue]⚽ 📺 ⚽ [/COLOR] Deportes Acestream[/COLOR][COLOR darkcyan] [I]    ~    p2p[/I][/COLOR][COLOR blue] ⚽ 📺 ⚽ [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title></title>
+<link>plugin://plugin.video.p2p-streams/?url= &amp;mode=1&amp;name= </link>
+]]></listrepeat>
+<expres></expres>
+<page>http://arenavision.ru/</page>
+<agent>Mozilla</agent>
+</regex>
+<thumbnail>http://static.torrentstream.org/sites/info/img/logo.png</thumbnail>
+</item>
+
+
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 1[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av1</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 2[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR=goldenrod]  ⚽ 📺 ⚽[/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av2</page>
+	<referer>http://arenavision.ru/</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 3[/B][/COLOR]       ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av3</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 4[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av4</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 5[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av5</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 6[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title> 
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av6</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽   [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 7[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av7</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽   [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 8[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av8</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽   [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 9[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av9</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 10[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av10</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 11[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av11</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 12[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av12</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 13[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av13</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 14[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av14</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 15[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av15</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 16[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av16</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 17[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av17</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 18[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av18</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 19[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av19</page>
+	<referer>http://arenavision.ru/</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 20[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av20</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 21[/B][/COLOR]     ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av21</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 22[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av22</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 23[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av23</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 24[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av24</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 25[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av25</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 26[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av26</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 27[/B][/COLOR]       ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av27</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+			
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 28[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av28</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 29[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av29</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+<item>
+	<title>[COLOR=goldenrod]⚽ 📺 ⚽  [/COLOR][COLOR=darkcyan][I][COLOR orangered][B]ArenaVision 30[/B][/COLOR]      ~    p2p[/I][/COLOR][COLOR goldenrod] ⚽ 📺 ⚽ [/COLOR]</title>
+	<link>plugin://plugin.video.p2p-streams/?url=$doregex[hash]&amp;mode=1&amp;name=jdr63IPTV+Arenavision</link>
+	<thumbnail>http://arenavision.ru/sites/default/files/FAVICON_AV2015.png</thumbnail>
+	
+	<regex>
+	<name>hash</name> 
+	<expres>this.loadPlayer\("(.*?)"</expres>
+	<page>http://arenavision.ru/av30</page>
+	<referer>http://arenavision.ru</referer>
+	<setcookie>beget=begetok</setcookie>
+	</regex>
+</item>
+
+
+<!------------------------------end---->
+
+
+</items>
+
+
+</channel>
+
